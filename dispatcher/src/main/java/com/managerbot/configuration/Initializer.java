@@ -1,6 +1,6 @@
-package com.managerbot.manager.configuration;
+package com.managerbot.configuration;
 
-import com.managerbot.manager.BotGeneral;
+import com.managerbot.controller.BotGeneral;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
