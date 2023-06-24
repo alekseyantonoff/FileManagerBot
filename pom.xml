@@ -16,7 +16,8 @@
 	<description>File manager Telegram bot </description>
 	<modules>
 		<module>dispatcher</module>
-	</modules>
+        <module>common-rabbitmq</module>
+    </modules>
 	<properties>
 		<java.version>17</java.version>
 		<projectlombok.version>1.18.26</projectlombok.version>

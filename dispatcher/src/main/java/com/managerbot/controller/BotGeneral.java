@@ -39,7 +39,8 @@ public class BotGeneral extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        log.info("new Update recieve");
+        updateController.processUpdate(update);
+/*        log.info("new Update recieve");
         if(update.hasMessage() && update.getMessage().hasText()){
             String messageText = update.getMessage().getText();
             long chatId = update.getMessage().getChatId();
@@ -51,7 +52,7 @@ public class BotGeneral extends TelegramLongPollingBot {
                     break;
                 default: log.info("Unexpected message");
             }
-        }
+        }*/
     }
 
     private void startBot(long chatId, String userName) {
